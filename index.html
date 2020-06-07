@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="CSS/main.css">
+</head>
+<body>
+
+
+<div class="header" > 
+	<div id="head" > Portfolio</div>
+	<img id="profile">
+	<div id="des">
+		Hello, I am<br> 
+	<b id="name"> </b>
+		<br>	
+	<p id="bio"></p>
+		<i>Find me on</i>
+
+		<nav >
+		<a href="https://github.com/Ri-yaz"  title="Github" target="tab" >	<img src="img/git.jpg" id="git"></a>
+		<a href="https://www.facebook.com/riyaz.karma.3" title="Facebook" target="tab"><img src="img/fb.jpg" id="fb" ></a>
+		</nav>
+			</div>
+
+</div>
+<script type="text/javascript">
+      fetch("https://api.github.com/users/Ri-yaz")
+      .then(response => response.json())
+      .then(function(data)    
+      {
+      	console.log(data)
+      	document.getElementById('profile').src=data['avatar_url']
+      	document.getElementById('name').textContent=data['name']
+
+      	document.getElementById('bio').textContent=data['bio'] 	
+      })
+
+</script>
+
+
+</body>
+</html>

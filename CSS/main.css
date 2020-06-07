@@ -1,0 +1,60 @@
+.header
+{
+  background-color:#5c912a; 
+  height: 800px
+}
+.header
+img{
+	height: 500px;
+	width: 400px;
+	float: right;
+	padding-right: 10px;
+}
+#head{
+	color: #b00415;
+	font-size: 40px;
+	font-family: serif;
+	padding: 0px  0px 0px 30px;
+	font-style: italic;
+}
+#des{
+	color: white;
+	font-family: serif;
+	font-size: 30px;
+padding:  250px 50px 5px 10px;
+text-align: left;
+
+}
+
+#des
+i{
+color:  #99CCFF;
+font-family: monospace;
+}
+#des b {
+	color: black;
+	font-size: 50px;
+}
+#work{
+	color: red;
+}
+ #git {
+	width: 50px;
+	height: 55px;
+	float: left;
+
+	
+		}
+#fb{
+	width: 50px;
+	height: 55px;
+	float: left;
+	
+		}
+.site ul li a img:hover{
+	width: 50px;
+	height: 55px;
+	float: left;
+	
+
+}
